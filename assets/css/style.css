@@ -1,0 +1,22 @@
+/* Header */
+header {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 20px;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+}
+
+.box {
+    display: flex;
+}
+
+.link-items,
+.social-items {
+    list-style-type: none;
+    display: flex;
+}
