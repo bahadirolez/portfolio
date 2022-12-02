@@ -12,12 +12,12 @@ body {
 
 
 /* Header */
-header {
+header.top-page {
     background-color: white;
     border: 1px solid black;
     border-radius: 25px;
-    margin: 30px;
-    padding: 0 15px;
+    margin: 60px;
+    padding: 0 30px;
     box-shadow: 3px 5px;
 }
 
@@ -88,4 +88,153 @@ header {
 
 .right {
     width: 30%;
+}
+
+/* About Me */
+
+.widget {
+    background-color: rgb(255, 250, 205);
+    border: 1px solid black;
+    box-shadow: 1px 1px;
+    border-radius: 15px;
+    position: relative;
+    float: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 45px;
+    vertical-align: baseline;
+}
+
+.widget-content {
+    letter-spacing: 0.3px;
+    overflow-wrap: break-word;
+    vertical-align: baseline;
+    padding-bottom: 20px;
+}
+
+.widget-title {
+    position: absolute;
+    top: -20px;
+    vertical-align: baseline;
+    left: 25px;
+    border-radius: 100px;
+    border: 1px solid black;
+    z-index: 2;
+    letter-spacing: 0.25px;
+    margin-bottom: 20px;
+    margin-block-start: 0;
+    background-color: white;
+    padding: 4px 25px;
+    font-size: 1.25em;
+}
+
+.about-me {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-name {
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 5px;
+}
+
+.profile-title {
+    font-size: 0.8em;
+    line-height: 5px;
+    font-weight: 100;
+}
+
+.profile-text {
+    padding-left: 20px;
+}
+
+.summary p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.summary {
+    padding-top: 0;
+}
+
+/* Post Box */
+.image img {
+    height: 380px;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+.post {
+    background-color:rgb(199, 245, 240);
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 1px 1px;
+}
+
+.image-box {
+    display: flex;
+}
+
+.info {
+    padding: 40px;
+}
+
+.image {
+    max-width: 40%;
+    padding: 20px;
+}
+
+.tag p{
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
+    max-width: 25%;
+    text-align: center;
+    padding: 5px;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
+    text-align: center;
+    padding: 5px 10px;
+    box-shadow: 3px 3px;
+    font-size: 1.2em;
+    transition: background-color 0.5s ease-in-out;
+                
+}
+
+button:hover {
+    background-color: rgb(195, 193, 193);
+}
+
+button:active {
+    box-shadow: 0 0;
+    transform: translateY(4px);
+    background-color: white;
+}
+
+.meta {
+    
+}
+
+.tag {
+    
 }
