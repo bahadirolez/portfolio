@@ -1,30 +1,48 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #54CBCA;
+    background-color: #ffffff;
     height: 100%;
     width: 100%;
-}
-
-body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Page Elements */
+/* Rounded */
+
+.rounded {
+    border: 1px solid black;
+    border-radius: 25px;
+    background-color: white;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+/* Box */
+
+.box {
+    background-color:rgb(255, 255, 255);
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px;
+}
+
+/* General Element Styles */
+
+.flexible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* Header */
 header.top-page {
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid black;
     border-radius: 25px;
     margin: 60px;
     padding: 0 30px;
     box-shadow: 3px 5px;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .link-items,
@@ -71,15 +89,12 @@ header.top-page {
 /* Main */
 
 .row {
-    display: flex;
-    justify-content: space-between;
     margin: 30px;
 }
 
 .column {
     float: left;
     padding: 30px;
-    height: 300px;
 }
 
 .left {
@@ -90,48 +105,27 @@ header.top-page {
     width: 30%;
 }
 
-/* About Me */
+/* Right Column Widgets */
 
 .widget {
-    background-color: rgb(255, 250, 205);
-    border: 1px solid black;
-    box-shadow: 1px 1px;
-    border-radius: 15px;
     position: relative;
-    float: none;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 45px;
-    vertical-align: baseline;
-}
-
-.widget-content {
-    letter-spacing: 0.3px;
-    overflow-wrap: break-word;
-    vertical-align: baseline;
-    padding-bottom: 20px;
+    padding: 45px 25px 20px 25px;
+    margin-bottom: 40px;
 }
 
 .widget-title {
     position: absolute;
     top: -20px;
-    vertical-align: baseline;
-    left: 25px;
-    border-radius: 100px;
-    border: 1px solid black;
-    z-index: 2;
-    letter-spacing: 0.25px;
-    margin-bottom: 20px;
-    margin-block-start: 0;
-    background-color: white;
-    padding: 4px 25px;
+    margin: 0;
     font-size: 1.25em;
+    left: 40px;
 }
 
 .about-me {
     padding: 0 20px;
     display: flex;
     align-items: center;
+    justify-content: none;
 }
 
 .profile-picture {
@@ -173,22 +167,19 @@ header.top-page {
     padding-top: 0;
 }
 
-/* Post Box */
-.image img {
-    height: 380px;
-    border-radius: 15px;
-    border: 1px solid black;
+/* Left Column Articles */
+
+article {
+    margin-bottom: 20px;
 }
 
-.post {
-    background-color:rgb(199, 245, 240);
-    border-radius: 15px;
-    border: 1px solid black;
-    box-shadow: 1px 1px;
+.image img {
+    height: 380px;
 }
 
 .image-box {
     display: flex;
+    align-items: center;
 }
 
 .info {
@@ -201,24 +192,24 @@ header.top-page {
 }
 
 .tag p{
-    border: 1px solid black;
-    border-radius: 25px;
-    background-color: white;
-    max-width: 25%;
-    text-align: center;
-    padding: 5px;
+    margin: 0;
+}
+
+.cloud div {
+    margin: 10px;
+}
+
+.cloud {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 button {
-    border: 1px solid black;
-    border-radius: 25px;
-    background-color: white;
-    text-align: center;
-    padding: 5px 10px;
     box-shadow: 3px 3px;
     font-size: 1.2em;
-    transition: background-color 0.5s ease-in-out;
-                
+    transition: background-color 0.5s ease-in-out; 
 }
 
 button:hover {
@@ -231,10 +222,13 @@ button:active {
     background-color: white;
 }
 
-.meta {
-    
+.post-bottom {
+    padding-top: 20px;
 }
 
-.tag {
-    
+/* Copyright */
+
+.copyright {
+    border: 1px solid black;
+    text-align: center;
 }
